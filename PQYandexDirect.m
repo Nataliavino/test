@@ -56,7 +56,7 @@ let
 
 
 // Присваиваем полученный токен
-    AuthKey = "Bearer "&AQAAAAAreHE1AAVPkKMWqPD1Xk1emSD4arGRinE,
+    AuthKey = "Bearer "&Token,
     url = "https://api.direct.yandex.com/",
 
 // Создаем тело запроса со всеми параметрами
@@ -83,7 +83,7 @@ Source = Web.Contents(url,[
 
 // Заголовки запроса
          Headers = [#"Authorization"=AuthKey ,
-                    #"Client-Login"=e-16284588@yandex.ru,
+                    #"Client-Login"=ClientLogin,
                     #"Accept-Language"="ru",
                     #"Content-Type"="application/x-www-form-urlencoded",
                     #"returnMoneyInMicros" = "false"]
